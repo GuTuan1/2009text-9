@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = [11, 22, 22, 55, 66, 11, 88, 66, 77, 66]
+        // 查找
+        arr.forEach(function(v,k){
+            if(v == 66){
+                console.log(k)
+            }
+        })
+        // 求和
+        var res = 0;
+        arr.forEach(function(v,k){
+            if(v == 66){
+                res = res+v
+            }
+        })
+        console.log(res)
+        // 移除
+        arr.splice(1,2)
+        console.log(arr)
+        // 移除
+        delete arr[22]
+        console.log(arr)
+        // 查找次数
+        var num = 0;
+        arr.forEach(function(v,k){
+            if(v == 66){
+                num++
+            }
+        })
+        console.log(num)
+    </script>
+</body>
+
+</html>
