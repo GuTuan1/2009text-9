@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="ajax.js"></script>
+
+<body>
+    <script>
+        Ajax({
+            url: "api.json.js",
+            method: "get",
+            data: { name: "zhangsan11", age: 16 },
+            success: function (res) {
+                alert("zhangsan11")
+            }
+        })
+    </script>
+</body>
+
+</html>
